@@ -9,19 +9,20 @@ export class LoginComponent implements OnInit {
 
   data:string  //string interpollation
   placeholderData="Enter username"  //property binding
+  uname:any
+  psw:any
+
   constructor(){
     this.data="@online banking"
   }
 
   ngOnInit():void{
   }
-  login(){
-    alert("login clicked")
-  }
-  unameChange(event:any){
-    console.log(event.target.value);
+  login(a:any,b:any){
+    this.uname=a.value
+    this.psw=b.value
+    console.log(this.uname,this.psw);
     
-
   }
-
+  
 }

@@ -4,16 +4,16 @@
         <h1 class="text-center text-white">BANK LOGIN</h1>
         <div class="mb-3 ">
           <label for="exampleInputEmail1" class="form-label mt-3 text-white"><strong>User name</strong></label>
-          <input (change)="unameChange($event)" [placeholder]="placeholderData"   class="form-control container inpBox" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input #uname [placeholder]="placeholderData"   class="form-control container inpBox" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label text-white "><strong>Password</strong></label>
-          <input placeholder="Enter password" type="password" class="form-control container inpBox" id="exampleInputPassword1">
+          <input #psw placeholder="Enter password" type="password" class="form-control container inpBox" id="exampleInputPassword1">
         </div>
         <div class="mb-3 text-center">
           <a class="" routerLink="register"><strong>Create new account</strong></a>
         </div>
-        <button (click)="login()" type="submit" class="btn btn-primary mb-3 mx-auto container butSty"><strong class="text-black">Sign in</strong></button>
+        <button (click)="login(uname,psw)" type="submit" class="btn btn-primary mb-3 mx-auto container butSty"><strong class="text-black">Sign in</strong></button>
       </form>
     
 </div>
