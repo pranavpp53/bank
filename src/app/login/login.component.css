@@ -1,0 +1,24 @@
+.mainDiv{
+    width: 30%;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 15%;
+}
+.inpBox{
+    background-color:rgb(204, 200, 200);
+    border: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+.butSty{
+    background-color: rgb(109, 179, 109);
+    border: none;
+}
+.butSty:hover{
+    background-color: blue;
+}

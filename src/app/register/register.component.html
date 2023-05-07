@@ -1,0 +1,21 @@
+<div class=" mainDiv  container text-black ">
+    <form (ngSubmit)="register()">
+        <h1 class="text-center text-white">Sign up</h1>
+        <div class="mb-3 ">
+            <label for="exampleInputEmail1" class="form-label mt-3 text-white"><strong>Account number</strong></label>
+            <input [(ngModel)]="acnum" name="acno1" id="acno2" placeholder="Enter account number"  class="form-control container inpBox" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3 ">
+          <label for="exampleInputEmail1"  class="form-label text-white"><strong>User name</strong></label>
+          <input [(ngModel)]="uname" name="uname1" id="uname2" placeholder="Enter username"  class="form-control container inpBox" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label text-white "><strong>Password</strong></label>
+          <input [(ngModel)]="psw" name="psw1" id="psw2" placeholder="Enter password" type="password" class="form-control container inpBox" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 text-center">
+        </div>
+        <button type="submit" class="btn btn-primary mt-5 mb-3 mx-auto container butSty"><strong class="text-black">Create</strong></button>
+      </form>
+    
+</div>
